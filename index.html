@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>SendETH & Vote DApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>SendETH & Vote DApp</h1>
+
+  <button id="connectBtn">Connect Wallet</button>
+  <button id="switchBtn">Switch to Sepolia</button>
+  <p id="account">Not connected</p>
+  <p id="balance"></p>
+
+  <h3>Send ETH</h3>
+  <input id="toAddress" placeholder="Recipient address" />
+  <input id="amount" type="number" step="0.0001" placeholder="Amount (ETH)" />
+  <button id="sendBtn">Send</button>
+
+  <h3>Voting (Sepolia Contract)</h3>
+  <p>Contract: <code>0x35cd167FA931C6c5E07AbB2621846FC35D54baD6</code></p>
+  <button id="vote1">Vote Proposal 1</button>
+  <button id="vote2">Vote Proposal 2</button>
+
+  <!-- Ethers v6 UMD from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.9.0/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
